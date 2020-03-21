@@ -1,0 +1,13 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                             controllers.PublicationSearch.index
+
+GET     /basicSearch                  controllers.PublicationSearch.basicSearch(query: String, numResultsToSkip: Integer, numResultsToReturn: Integer)
+
+GET     /spatialSearch                controllers.PublicationSearch.spatialSearch(query: String, yearFrom: Integer, yearTo: Integer, numResultsToSkip: Integer, numResultsToReturn: Integer)
+
+
